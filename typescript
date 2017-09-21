@@ -1,0 +1,365 @@
+Script started on Thu Sep 21 09:54:34 2017
+[?1034hbash-3.2$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+bash-3.2$ q[Kdc desktop
+Could not open file desktop: No such file or directory
+bash-3.2$ cd desktop
+bash: cd: desktop: No such file or directory
+bash-3.2$ ls _la
+ls: _la: No such file or directory
+bash-3.2$ ls _lacd desktopdc[C[C[C[C[C[C[C[Cgit[K[K[K[Kle [K[Ks -la
+total 168
+drwxr-xr-x   8 joergen.nielsen  STUDENTDOMENE\Domain Users    272 Sep 21 09:54 .
+drwx------+  5 joergen.nielsen  STUDENTDOMENE\Domain Users    170 Sep 21 09:41 ..
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users   6148 Sep 21 09:45 .DS_Store
+drwxr-xr-x  10 joergen.nielsen  STUDENTDOMENE\Domain Users    340 Sep 21 09:52 .git
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20668 Sep 21 09:50 tekst 42.docx
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:49 tekst 69.docx
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:44 tekst.docx
+-rw-r--r--   1 joergen.nielsen  STUDENTDOMENE\Domain Users   2306 Sep 21 09:56 typescript
+bash-3.2$ typesxript[K[K[K[K[Kcript name "tuch[K[K[K[Ktouch me"
+bash: typescript: command not found
+bash-3.2$ rm -rf .git
+bash-3.2$ rm -rf .gittypescript name "touch me"[C[C[C[C[C[C[C[C[C[Cls -la[K
+total 168
+drwxr-xr-x  7 joergen.nielsen  STUDENTDOMENE\Domain Users    238 Sep 21 09:58 .
+drwx------+ 5 joergen.nielsen  STUDENTDOMENE\Domain Users    170 Sep 21 09:41 ..
+-rw-r--r--@ 1 joergen.nielsen  STUDENTDOMENE\Domain Users   6148 Sep 21 09:45 .DS_Store
+-rw-r--r--@ 1 joergen.nielsen  STUDENTDOMENE\Domain Users  20668 Sep 21 09:50 tekst 42.docx
+-rw-r--r--@ 1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:49 tekst 69.docx
+-rw-r--r--@ 1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:44 tekst.docx
+-rw-r--r--  1 joergen.nielsen  STUDENTDOMENE\Domain Users   3269 Sep 21 09:58 typescript
+bash-3.2$ git init
+Initialized empty Git repository in /Users/joergen.nielsen/Desktop/Git_test/.git/
+bash-3.2$ git init[2Pls -la
+total 168
+drwxr-xr-x   8 joergen.nielsen  STUDENTDOMENE\Domain Users    272 Sep 21 10:01 .
+drwx------+  5 joergen.nielsen  STUDENTDOMENE\Domain Users    170 Sep 21 09:41 ..
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users   6148 Sep 21 09:45 .DS_Store
+drwxr-xr-x  10 joergen.nielsen  STUDENTDOMENE\Domain Users    340 Sep 21 10:01 .git
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20668 Sep 21 09:50 tekst 42.docx
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:49 tekst 69.docx
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:44 tekst.docx
+-rw-r--r--   1 joergen.nielsen  STUDENTDOMENE\Domain Users   4070 Sep 21 09:59 typescript
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mtekst 42.docx[m
+	[31mtekst 69.docx[m
+	[31mtekst.docx[m
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ open index[K[K[K[K[Ktekst [K[K[K[K[K[Kindex.html -a"subline text" [K
+Unable to find application named 'subline text'
+bash-3.2$ git add index.html
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.html[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscript.css[m
+	[31mtekst.docx[m
+	[31mtypescript[m
+
+bash-3.2$ git statusadd index.html[K[K[K[K[K[K[K[K[K[K-A
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.html[m
+	[32mnew file:   script.css[m
+	[32mnew file:   tekst.docx[m
+	[32mnew file:   typescript[m
+
+bash-3.2$ open index.html _a"sublin[Kme yext[K[K[K[Ktext"
+The file /Users/joergen.nielsen/Desktop/Git_test/_asublime text does not exist.
+bash-3.2$ git open index.html -a"sublime text"
+git: 'open' is not a git command. See 'git --help'.
+
+The most similar commands are
+	clean
+	clone
+	notes
+	prune
+bash-3.2$ git open index.html 
+git: 'open' is not a git command. See 'git --help'.
+
+The most similar commands are
+	clean
+	clone
+	notes
+	prune
+bash-3.2$ open index.html -a"text edit[K[K[K[K[KEdit"
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.html[m
+	[32mnew file:   script.css[m
+	[32mnew file:   tekst.docx[m
+	[32mnew file:   typescript[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   index.html[m
+	[31mmodified:   typescript[m
+
+bash-3.2$ git ad [Kd -A
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.html[m
+	[32mnew file:   script.css[m
+	[32mnew file:   tekst.docx[m
+	[32mnew file:   typescript[m
+
+bash-3.2$ open index.html -A"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kopen index.html -a"word"
+Unable to find application named 'word'
+bash-3.2$ open index.html -a"microsoft[K[K[K[K[K[K[K[K[KMicrosoft Word"
+bash-3.2$ status[K[K[K[K[K[Kgit status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.html[m
+	[32mnew file:   script.css[m
+	[32mnew file:   tekst.docx[m
+	[32mnew file:   typescript[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   index.html[m
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mindex.fld/[m
+
+bash-3.2$ gir add -A
+bash: gir: command not found
+bash-3.2$ giyt[K[K[K[Kgit add -A
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.fld/filelist.xml[m
+	[32mnew file:   index.fld/themedata.thmx[m
+	[32mnew file:   index.html[m
+	[32mnew file:   script.css[m
+	[32mnew file:   tekst.docx[m
+	[32mnew file:   typescript[m
+
+bash-3.2$ git revome[K[K[K[K[K[Kreset script.css
+Unstaged changes after reset:
+M	typescript
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.fld/filelist.xml[m
+	[32mnew file:   index.fld/themedata.thmx[m
+	[32mnew file:   index.html[m
+	[32mnew file:   tekst.docx[m
+	[32mnew file:   typescript[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscript.css[m
+
+bash-3.2$ git reset typeskript[K[K[K[K[Kcript
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   index.fld/filelist.xml[m
+	[32mnew file:   index.fld/themedata.thmx[m
+	[32mnew file:   index.html[m
+	[32mnew file:   tekst.docx[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscript.css[m
+	[31mtypescript[m
+
+bash-3.2$ git commit -m"Første git test"
+[master (root-commit) 79d922d] Første git test
+ 4 files changed, 5 insertions(+)
+ create mode 100644 index.fld/filelist.xml
+ create mode 100644 index.fld/themedata.thmx
+ create mode 100644 index.html
+ create mode 100644 tekst.docx
+bash-3.2$ git log
+[?1h=[33mcommit 79d922d9f20365b1ceadfbeec0897ea1e9d574b6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: jørgen Graff <jorgen.graff-n@outlook.com>[m
+Date:   Thu Sep 21 10:27:02 2017 +0200[m
+[m
+    Første git test[m
+[K[?1l>bash-3.2$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscript.css[m
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git branch
+* [32mmaster[m
+bash-3.2$ git branch login
+bash-3.2$ git checkout login
+Switched to branch 'login'
+bash-3.2$ touch lgin [K.html
+bash-3.2$ s[Kls -la
+total 328
+drwxr-xr-x  10 joergen.nielsen  STUDENTDOMENE\Domain Users    340 Sep 21 10:40 .
+drwx------+  5 joergen.nielsen  STUDENTDOMENE\Domain Users    170 Sep 21 09:41 ..
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users   6148 Sep 21 10:39 .DS_Store
+drwxr-xr-x  13 joergen.nielsen  STUDENTDOMENE\Domain Users    442 Sep 21 10:38 .git
+drwxr-xr-x@  4 joergen.nielsen  STUDENTDOMENE\Domain Users    136 Sep 21 10:11 index.fld
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  94486 Sep 21 10:11 index.html
+-rw-r--r--   1 joergen.nielsen  STUDENTDOMENE\Domain Users      0 Sep 21 10:39 login.html
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20668 Sep 21 09:50 script.css
+-rw-r--r--@  1 joergen.nielsen  STUDENTDOMENE\Domain Users  20663 Sep 21 09:44 tekst.docx
+-rw-r--r--   1 joergen.nielsen  STUDENTDOMENE\Domain Users  11032 Sep 21 10:40 typescript
+bash-3.2$ open login.in[K[K[K[K[K[K[K[Klogin.html -a"textEdit"
+bash-3.2$ git script.css [K[K[K[K[K[K[K[K[K[Ktatus
+On branch login
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlogin.html[m
+	[31mscript.css[m
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git add ogin[K[K[K[Klogin.html
+bash-3.2$ git status
+On branch login
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   login.html[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscript.css[m
+	[31mtypescript[m
+
+bash-3.2$ git comit login.html 
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+bash-3.2$ git commit login.html 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;49r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[49;1H"~/Desktop/Git_test/.git/COMMIT_EDITMSG" 12L, 257C[>c[2;1H# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch login
+# Changes to be committed:
+#[7Cnew file:   login.html
+#
+# Untracked files:
+#[7Cscript.css
+#[7Ctypescript
+#
+[94m~                                                                                              [14;1H~                                                                                              [15;1H~                                                                                              [16;1H~                                                                                              [17;1H~                                                                                              [18;1H~                                                                                              [19;1H~                                                                                              [20;1H~                                                                                              [21;1H~                                                                                              [22;1H~                                                                                              [23;1H~                                                                                              [24;1H~                                                                                              [25;1H~                                                                                              [26;1H~                                                                                              [27;1H~                                                                                              [28;1H~                                                                                              [29;1H~                                                                                              [30;1H~                                                                                              [31;1H~                                                                                              [32;1H~                                                                                              [33;1H~                                                                                              [34;1H~                                                                                              [35;1H~                                                                                              [36;1H~                                                                                              [37;1H~                                                                                              [38;1H~                                                                                              [39;1H~                                                                                              [40;1H~                                                                                              [41;1H~                                                                                              [42;1H~                                                                                              [43;1H~                                                                                              [44;1H~                                                                                              [45;1H~                                                                                              [46;1H~                                                                                              [47;1H~                                                                                              [48;1H~                                                                                              [1;1H[?12l[?25h[?25l[m[49;1H[1mrecording[m[49;10H[K[1;1H[?12l[?25h[?25l[49;1H[1m--c INSERT[m [1m --recording[2;48r[m[2;1H[L[1;49r[2;1H[?12l[?25h[?25lt[?12l[?25h[49;1H[1mrecording [m[49;10H[K[2;1H[?25l[?12l[?25h[1;1H[?25l[49;1H[1m--c INSERT[m [1m --recording[1;1H[?12l[?25h[?25l[ms[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lu[?12l[?25h[?25ls[?12l[?25h[?25l[2;48r[2;1H[L[1;49r[2;1H[?12l[?25h[?25l[1;48r[48;1H
+[1;49r[1;1Hgit status[48;1H[94m~                                                                                              [1;11H[?12l[?25h[?25l[m[1;10H[K[1;10H[?12l[?25h[?25l[1;9H[K[1;9H[?12l[?25h[?25l[1;8H[K[1;8H[?12l[?25h[?25l[1;7H[K[1;7H[?12l[?25h[?25l[1;6H[K[1;6H[?12l[?25h[?25l[1;5H[K[1;5H[?12l[?25h[?25l[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25lm[?12l[?25h[?25ln[?12l[?25h[?25lm[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25lq[?12l[?25h[?25lq[?12l[?25h[?25lq[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[49;1H[1mrecording [m[49;10H[K[1;1H[?25l[?12l[?25h[?25l[49;1H[1m--c INSERT[m [1m --recording[1;1H[?12l[?25h[?25l[mg[?12l[?25h[?25ly[?12l[?25h[?25lj[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[49;1H[1mrecording [m[49;10H[K[1;1H[?25l[?12l[?25h[?25l[1;48r[48;1H
+[1;49r[48;1H[94m~                                                                                              [1;1H[?12l[?25h[?25l[m[49;1H[1m--c INSERT[m [1m --recording[1;1H[?12l[?25h[?25l[mrt[?12l[?25h[?25let[?12l[?25h[?25ljt[?12l[?25h[?25lt[1;4H[K[1;3H[?12l[?25h[?25lt[1;3H[K[1;2H[?12l[?25h[?25lt[1;2H[K[1;1H[?12l[?25h[?25lrt[?12l[?25h[?25let[?12l[?25h[?25ljt[?12l[?25h[?25let[?12l[?25h[?25lct[?12l[?25h[?25ltt[?12l[?25h[?25l[2;48r[2;1H[L[1;49r[1;7H[K[2;1Ht[?12l[?25h[?25l[1;48r[48;1H
+[1;49r[1;1Hrejectt[48;1H[94m~                                                                                              [1;7H[?12l[?25h[?25l[m[1;7H[K[1;6H[?12l[?25h[?25lt[1;6H[K[1;5H[?12l[?25h[?25lt[1;5H[K[1;4H[?12l[?25h[?25lt[1;4H[K[1;3H[?12l[?25h[?25lt[1;3H[K[1;2H[?12l[?25h[?25lt[1;2H[K[1;1H[?12l[?25h[?25lgt[?12l[?25h[?25lit[?12l[?25h[?25ltt[?12l[?25h[?25l t[?12l[?25h[?25lct[?12l[?25h[?25lot[?12l[?25h[?25lmt[?12l[?25h[?25lmt[?12l[?25h[?25lit[?12l[?25h[?25ltt[?12l[?25h[?25l t[?12l[?25h[?25l-t[?12l[?25h[?25lmt[?12l[?25h[?25l"t[?12l[?25h[?25llt[?12l[?25h[?25lot[?12l[?25h[?25lgt[?12l[?25h[?25lit[?12l[?25h[?25lnt[?12l[?25h[?25l.t[?12l[?25h[?25lht[?12l[?25h[?25ltt[?12l[?25h[?25lmt[?12l[?25h[?25llt[?12l[?25h[?25l"t[?12l[?25h[?25l[2;48r[2;1H[L[1;49r[1;26H[K[2;1Ht[?12l[?25h
